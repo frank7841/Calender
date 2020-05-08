@@ -8,5 +8,23 @@ hr {
 }
 .row {
     margin: 20px;
-
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group {
+    border: 1px solid;
+    width: 30%;
+    content: center;
+    margin-left: 35%;
+    border-style: none;
+}
+button {
+    margin-left: 29%;    
 }
