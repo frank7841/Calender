@@ -4,6 +4,7 @@
         <title>Exact date of birth</title>
         <link rel="stylesheet" href="Css/bootstrap.css">
         <link rel="stylesheet" href="Css/style.css">
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div class="jumbotron">
@@ -53,36 +54,30 @@
                 </div>
             </div>
         </div>
-        <form class="form-group" name="myform" oninput="return validate()">
-            <label for="dob">Date of Birth</label>
-            <input type="text" id="dob" name="day-date" placeholder="Enter Date of Birth" required>
-            <label for="mob">Month of Birth</label>
-            <input type="text" id="mob" name="month-date" placeholder="Enter Your Birth Month" required>
-            <label for="yob">Year of Birth</label>
-            <input type="text" id="yob" name="year-date" placeholder="Enter Your year of Birth" required>
-            <label for="male-female">Choose Your Gender</label>
-            <select id="male-female" class="form-control" required>
-                <option selected>Choose...</option>
-                <option value="male">Male </option>
-                <option value="female">Female </option>
-            </select>
-            <input type="submit"value="Check Name" class="check">
-            <input type="submit"value="Refresh" class="refresh">
-        </form>
+        <div class="checking">
+            <h1 class="text-center">Fill the form to view you Akan Name</h1>
+            <form class="form-group" name="myform" onsubmit="return validate()">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" name="dayDate" placeholder="Enter Date of Birth" required>
+                <label for="mob">Month of Birth</label>
+                <input type="text" id="mob" name="monthDate" placeholder="Enter Your Birth Month" required>
+                <label for="yob">Year of Birth</label>
+                <input type="text" id="yob" name="yearDate" placeholder="Enter Your year of Birth" required>
+                <label for="male-female">Choose Your Gender</label>
+                <select id="male-female" class="form-control" required>
+                    <option selected>Choose...</option>
+                    <option value="male">Male </option>
+                    <option value="female">Female </option>
+                </select>
+                <input type="submit"value="Check Name" class="check">
+                <input type="submit"value="Refresh" class="refresh">
+            </form>
+        </div>
+        <footer>
         <div class="jumbotron">
             <a class="mail"href="mailto:franklinewax@gmail.com">franklinewax@gmail.com</a>
             <a class="phone" href="tel:+254 790943918">0790943918</a>
         </div>
+    </footer>
     </body>
-    <script>
-        function validate(){  
-var day=document.myform.day-date.value;  
-if (isNaN(num)){  
-  document.getElementById("numloc").innerHTML="Enter Numeric value only";  
-  return false;  
-}else{  
-  return true;  
-  }  
-}  
-    </script>
 </html>
