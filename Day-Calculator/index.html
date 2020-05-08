@@ -53,24 +53,36 @@
                 </div>
             </div>
         </div>
-        <form class="form-group">
+        <form class="form-group" name="myform" oninput="return validate()">
             <label for="dob">Date of Birth</label>
-            <input type="number" id="dob" name="day-date" placeholder="Enter Date of Birth">
+            <input type="text" id="dob" name="day-date" placeholder="Enter Date of Birth" required>
             <label for="mob">Month of Birth</label>
-            <input type="number" id="mob" name="month-date" placeholder="Enter Your Birth Month">
+            <input type="text" id="mob" name="month-date" placeholder="Enter Your Birth Month" required>
             <label for="yob">Year of Birth</label>
-            <input type="number" id="yob" name="year-date" placeholder="Enter Your year of Birth">
+            <input type="text" id="yob" name="year-date" placeholder="Enter Your year of Birth" required>
             <label for="male-female">Choose Your Gender</label>
-            <select id="male-female" class="form-control">
+            <select id="male-female" class="form-control" required>
                 <option selected>Choose...</option>
                 <option value="male">Male </option>
                 <option value="female">Female </option>
-            </select><br>
-            <button type="button" class="btn btn-success">Check Akan Name</button>
+            </select>
+            <input type="submit"value="Check Name" class="check">
+            <input type="submit"value="Refresh" class="refresh">
         </form>
         <div class="jumbotron">
             <a class="mail"href="mailto:franklinewax@gmail.com">franklinewax@gmail.com</a>
             <a class="phone" href="tel:+254 790943918">0790943918</a>
         </div>
     </body>
+    <script>
+        function validate(){  
+var day=document.myform.day-date.value;  
+if (isNaN(num)){  
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+  return false;  
+}else{  
+  return true;  
+  }  
+}  
+    </script>
 </html>
