@@ -26,8 +26,18 @@ else if (dayDate>31){
     alert("Date cannot be greater than 31")
     document.myform.dayDate.focus();
     return false;
-
 }
+else if (monthDate<1){
+    alert("Month cannot be less than 1");
+    document.myform.monthDate.focus();
+    return false;
+}
+else if (monthDate>12){
+    alert("Month cannot be greater than 12");
+    document.myform.monthDate.focus();
+    return false;
+}
+
 else
 return true
 }
