@@ -37,7 +37,10 @@ else if (monthDate>12){
     document.myform.monthDate.focus();
     return false;
 }
-
 else
-return true
+    return true
+}
+
+function newFunction() {
+  document.getElementById("dateForm").reset();
 }
