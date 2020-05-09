@@ -2,7 +2,7 @@ function validate(dayDate){
 var dayDate=document.myform.dayDate.value;  
 var monthDate=document.myform.monthDate.value;
 var yearDate=document.myform.yearDate.value;
-if (isNaN(dayDate,monthDate,yearDate)){  
+if (isNaN(dayDate)){  
     alert("You must eneter a valid date");
     document.myform.dayDate.focus();
     return false;  
@@ -17,7 +17,17 @@ if (isNaN(yearDate)) {
     document.myform.yearDate.focus();
     return false;
 }
+else if (dayDate<1){
+    alert("Date cannot be less than 1");
+    document.myform.dayDate.focus();
+    return false
+}
+else if (dayDate>31){
+    alert("Date cannot be greater than 31")
+    document.myform.dayDate.focus();
+    return false;
 
+}
 else
 return true
 }
