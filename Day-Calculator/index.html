@@ -15,7 +15,7 @@
                 <div class="card w-100">
                     <div class="card-body">
                         <h5 class="card-title">Do you Know the exact day of the week that you were born? </h5>
-                        <p class="card-text">Most of us know of the date we were born. However, unless our parents told us of the exact day we were born, this information has eluded us. The website takes in your gender, date of birth, month, and year and outputs your<em>Akan name</em><br>
+                        <p class="card-text">Most of us know of the date we were born. However, unless our parents told us of the exact day we were born, this information has eluded us. The website takes in your gender, date of birth, month, and year and outputs your <em>Akan name</em> based on the day of the week that you were born.
                         The <em>Akan naming system</em> is a ghanian culture where by children are given their first name depending on their day of birth and gender. </p>
                     </div>
                 </div>
@@ -56,9 +56,9 @@
         </div>
         <div class="checking">
             <h1 class="text-center">Fill the form to view you Akan Name</h1>
-            <form class="form-group" name="myform" onsubmit="return validate()">
+            <form class="form-group" name="myform" id="dateForm" onsubmit="">
                 <label for="dob">Date of Birth</label>
-                <input type="text" id="dob" name="dayDate" placeholder="Enter Date of Birth" required>
+                <input type="text" id="dob" name="dayDate"  placeholder="Enter Date of Birth" required>
                 <label for="mob">Month of Birth</label>
                 <input type="text" id="mob" name="monthDate" placeholder="Enter Your Birth Month" required>
                 <label for="yob">Year of Birth</label>
@@ -69,8 +69,8 @@
                     <option value="male">Male </option>
                     <option value="female">Female </option>
                 </select>
-                <input type="submit"value="Check Name" class="check">
-                <input type="submit"value="Refresh" class="refresh">
+                <input type="submit"value="Check Name" class="check" onclick="return validate()">
+                <input type="submit"value="Reset" class="refresh" onclick="newFunction()">
             </form>
         </div>
         <footer>
@@ -78,6 +78,7 @@
             <a class="mail"href="mailto:franklinewax@gmail.com">franklinewax@gmail.com</a>
             <a class="phone" href="tel:+254 790943918">0790943918</a>
         </div>
-    </footer>
+        </footer>
+        
     </body>
 </html>
