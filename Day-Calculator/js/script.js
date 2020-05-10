@@ -54,5 +54,32 @@ function calculateDay(){
     var akanNames=["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var weekDay=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var day = Math.trunc((((centuary/4)-2*centuary-1)+((5*year/4))+((26*(month+1)/10))+date)%7);
+    if (day==0 && gender==="male"){
+        alert(" Your Akan Name is " + akanNames[0]);
+    }
+    else if (day==1 && gender==="male"){
+        alert("Your Akan name is "+ akanNames[1]);
+    }
+    else if (day===2 && gender==="male"){
+        alert("You Akan name is "+ akanNames[2]);
+    }
+    else if (day===3 && gender==="male"){
+        alert("Your Akan name is "+ akanNames[3]);
+    }
+    else if (day===4&& gender==="male"){
+        alert("You Akan name is "+ akanNames[4]);
+    }
+    else if (day===5 && gender==="male"){
+        alert("Your Akan name is "+ akanNames[5]);
+    }
+    else if (day===6 && gender==="male"){
+        alert("Your Akan name is "+akanNames[6])
+    }
+    else if (day===0 && gender==="female"){
+        alert("Your Akan name is "+ akanNames[7]);
+    }
+    else
+    alert("You must be male");
+
     
 }
