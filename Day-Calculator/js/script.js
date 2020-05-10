@@ -53,6 +53,7 @@ function calculateDay(){
     var gender= document.myform.mygender.value;
     var akanNames=["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var weekDay=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var day = (((centuary/4)-2*centuary-1)+((5*year/4))+((26*(month+1)/10))+date)%7;
     
     
 }
