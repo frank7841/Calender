@@ -11,7 +11,8 @@
 * For older Chrome , allow javaScript in the settings> prefference section.
 {Navigate to Day Calculator folder, launch index.html open with chrome browser. incase of any edits, open with vscode twext editor}
 ## Known Bugs
-{The website is not responsive to all viewports}
+{The website is not responsive to all viewports
+The system doesnt calculate every exact day depending on the user inputs eg  2002,2,7}
 ## Technologies Used
 {I used 'css', 'javaScript', bootstrap' and 'html' to create the website.}
 ## Behavior Driven Development
