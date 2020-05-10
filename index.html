@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exact date of birth</title>
+        <link rel="stylesheet" href="Css/bootstrap.css">
+        <link rel="stylesheet" href="Css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 class="alert alert-success" id="text-center">Exact day of the week Calculator</h1>
+        </div> <hr>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Do you Know the exact day of the week that you were born? </h5>
+                        <p class="card-text">Most of us know of the date we were born. However, unless our parents told us of the exact day we were born, this information has eluded us. The website takes in your gender, date of birth, month, and year and outputs your <em>Akan name</em> based on the day of the week that you were born.
+                        The <em>Akan naming system</em> is a ghanian culture where by children are given their first name depending on their day of birth and gender. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Male Akan names </h5>
+                        <ul>
+                            <li>Sunday-Kwasi</li>
+                            <li>Monday-Kwandwo</li>
+                            <li>Tuesday-Kwabena</li>
+                            <li>Wednesday-Kwaku</li>
+                            <li>Thursday-Yaw</li>
+                            <li>Friday-Kofi</li>
+                            <li>Saturday-Kwame</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Female Akan names </h5>
+                        <ul>
+                            <li>Sunday-Akosua</li>
+                            <li>Monday-Adwoa</li>
+                            <li>Tuesday-Abenaa</li>
+                            <li>Wednesday-Akua</li>
+                            <li>Thursday-Yaa</li>
+                            <li>Friday-Afua</li>
+                            <li>Saturday-Ama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checking">
+            <h1 class="text-center">Fill the form to view you Akan Name</h1>
+            <form class="form-group" name="myform" id="dateForm" onsubmit="">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" name="dayDate"  placeholder="Enter Date of Birth" required>
+                <label for="mob">Month of Birth</label>
+                <input type="text" id="mob" name="monthDate" placeholder="Enter Your Birth Month" required>
+                <label for="yob">Year of Birth</label>
+                <input type="text" id="yob" name="yearDate" placeholder="Enter Your year of Birth" required>
+                <label for="mygender">Choose Your Gender</label>
+                <select name="mygender" class="form-control" required>
+                    <option selected>Choose...</option>
+                    <option value="male">Male </option>
+                    <option value="female">Female </option>
+                </select>
+                <input type="submit"value="Akan Name" class="check" onclick="return calculateDay();">
+                <input type="submit"value="Clear" class="refresh" id="dateForm" onclick="newFunction()">
+            </form> 
+        </div>
+        <div class="jumbotron">
+            <hr>
+            <a class="phone" href="tel:+254 790943918">0790943918</a>
+            <a class="mail"href="mailto:franklinewax@gmail.com">franklinewax@gmail.com</a>
+        </div>      
+    </body>
+</html>
