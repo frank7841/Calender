@@ -44,3 +44,14 @@ else
 function newFunction() {
   document.getElementById("dateForm").reset();
 }
+function calculateDay(){
+    var date= parseInt(document.myform.dayDate.value);
+    var month = parseInt(document.myform.monthDate.value);
+    var yearDate = document.myform.yearDate.value;
+    var centuary= parseInt(yearDate.substr(0,2));
+    var year = parseInt(yearDate.substr(2,4));
+    var gender= document.myform.mygender.value;
+    alert(centuary);
+    
+    
+}
