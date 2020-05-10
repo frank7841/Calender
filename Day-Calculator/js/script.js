@@ -51,7 +51,8 @@ function calculateDay(){
     var centuary= parseInt(yearDate.substr(0,2));
     var year = parseInt(yearDate.substr(2,4));
     var gender= document.myform.mygender.value;
-    alert(centuary);
+    var akanNames=["Kwasi", "Kwandwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var weekDay=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     
     
 }
