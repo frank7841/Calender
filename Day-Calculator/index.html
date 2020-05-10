@@ -63,22 +63,20 @@
                 <input type="text" id="mob" name="monthDate" placeholder="Enter Your Birth Month" required>
                 <label for="yob">Year of Birth</label>
                 <input type="text" id="yob" name="yearDate" placeholder="Enter Your year of Birth" required>
-                <label for="male-female">Choose Your Gender</label>
-                <select id="male-female" class="form-control" required>
+                <label for="mygender">Choose Your Gender</label>
+                <select name="mygender" class="form-control" required>
                     <option selected>Choose...</option>
                     <option value="male">Male </option>
                     <option value="female">Female </option>
                 </select>
-                <input type="submit"value="Check Name" class="check" onclick="return validate()">
-                <input type="submit"value="Reset" class="refresh" onclick="newFunction()">
-            </form>
+                <input type="submit"value="Validate" class="check" onclick="return calculateDay();">
+                <input type="submit"value="Clear" class="refresh" id="dateForm" onclick="newFunction()">
+            </form> 
         </div>
-        <footer>
         <div class="jumbotron">
-            <a class="mail"href="mailto:franklinewax@gmail.com">franklinewax@gmail.com</a>
+            <hr>
             <a class="phone" href="tel:+254 790943918">0790943918</a>
-        </div>
-        </footer>
-        
+            <a class="mail"href="mailto:franklinewax@gmail.com">franklinewax@gmail.com</a>
+        </div>      
     </body>
 </html>
